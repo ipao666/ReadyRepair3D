@@ -1,0 +1,6 @@
+{"group_id": "sana_004", "selected_sample_id": "sana_004_c0_s2026071540", "selected_quality": 0.6747226119041443, "optimal_quality": 0.8348458409309387, "regret": 0.16012322902679443, "top1_tie_aware": false}
+{"group_id": "sana_014", "selected_sample_id": "sana_014_c1_s2026071641", "selected_quality": 0.8031215667724609, "optimal_quality": 0.8031215667724609, "regret": 0.0, "top1_tie_aware": true}
+{"group_id": "sana_018", "selected_sample_id": "sana_018_c3_s2026071683", "selected_quality": 0.6825929284095764, "optimal_quality": 0.7334975600242615, "regret": 0.05090463161468506, "top1_tie_aware": false}
+{"group_id": "sana_020", "selected_sample_id": "sana_020_c2_s2026071702", "selected_quality": 0.4431725740432739, "optimal_quality": 0.6164823770523071, "regret": 0.1733098030090332, "top1_tie_aware": false}
+{"group_id": "sana_028", "selected_sample_id": "sana_028_c3_s2026071783", "selected_quality": 0.6540824770927429, "optimal_quality": 0.8397066593170166, "regret": 0.18562418222427368, "top1_tie_aware": false}
+{"group_id": "sana_042", "selected_sample_id": "sana_042_c0_s2026071920", "selected_quality": 0.802582323551178, "optimal_quality": 0.802582323551178, "regret": 0.0, "top1_tie_aware": true}

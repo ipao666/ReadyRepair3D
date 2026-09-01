@@ -1,0 +1,23 @@
+{
+  "project": "ReadyRepair3D",
+  "release": "2026-07-26-submission",
+  "status": "frozen",
+  "experiment_metrics_frozen_at": "2026-07-22",
+  "code_release_frozen_at": "2026-07-26",
+  "primary_backend": "Hunyuan3D-2.1",
+  "ready3d_deployment": "V2",
+  "repair3d_deployment": "safe_fallback",
+  "repair3d_rule_version": "minimal_reliable_rule_v1",
+  "quality_threshold": 0.806912747446761,
+  "selection_policy": "structural_gate_then_ready_top2_then_3d_score",
+  "main_experiment_groups": 32,
+  "submission_strategies": ["direct", "ready_top2", "all"],
+  "direct_qualified_rate": 0.219,
+  "ready_top2_qualified_rate": 0.344,
+  "hunyuan3d_repository_commit": "82920d643c0dc2f7bfd7255f45f62d386edfe60c",
+  "core_mutation_allowed": false,
+  "all_mean_quality": 0.7495,
+  "all_qualified_rate": 0.472,
+  "all_mean_3d_calls": 4.0,
+  "all_mean_gpu_generation_seconds": 457.2
+}

@@ -1,0 +1,42 @@
+{
+  "targets": 184,
+  "groups": 46,
+  "splits": {
+    "train": 96,
+    "validation": 64,
+    "test": 24
+  },
+  "failure_positive_support": {
+    "silhouette_truncation": {
+      "train": 6,
+      "validation": 10,
+      "test": 7
+    },
+    "depth_ambiguity": {
+      "train": 51,
+      "validation": 30,
+      "test": 13
+    },
+    "background_leakage": {
+      "train": 9,
+      "validation": 2,
+      "test": 5
+    },
+    "texture_lighting_conflict": {
+      "train": 14,
+      "validation": 18,
+      "test": 1
+    },
+    "view_conflict": {
+      "train": 35,
+      "validation": 21,
+      "test": 10
+    },
+    "insufficient_detail": {
+      "train": 3,
+      "validation": 1,
+      "test": 1
+    }
+  },
+  "automatic_quality_proxy": true
+}

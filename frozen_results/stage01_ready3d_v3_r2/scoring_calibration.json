@@ -1,0 +1,88 @@
+{
+  "scoring_version": "ready3d-v2",
+  "source": "independent_validation_64",
+  "quality_threshold_percentile": 70,
+  "quality_threshold": 0.806912747446761,
+  "metrics": {
+    "dino_similarity": {
+      "low": 0.48374358336587614,
+      "high": 0.944711540900385,
+      "direction": "positive"
+    },
+    "silhouette_iou": {
+      "low": 0.2960112905391091,
+      "high": 0.9250495990823943,
+      "direction": "positive"
+    },
+    "contour_similarity": {
+      "low": 0.7497462310439106,
+      "high": 0.9832810103392684,
+      "direction": "positive"
+    },
+    "largest_component_area_ratio": {
+      "low": 0.9987405062814846,
+      "high": 1.0000000000000002,
+      "direction": "positive"
+    },
+    "debris_area_ratio": {
+      "low": 0.0,
+      "high": 0.0009005694052122183,
+      "direction": "negative"
+    },
+    "boundary_edge_length_ratio": {
+      "low": 0.07224977794087067,
+      "high": 0.22575417056252717,
+      "direction": "negative"
+    },
+    "non_manifold_edge_length_ratio": {
+      "low": 0.0,
+      "high": 0.0,
+      "direction": "negative"
+    }
+  },
+  "normalization": {
+    "calibration_version": "ready3d-v2-train-p5-p95",
+    "normalization_source_split": "validation",
+    "low_percentile": 5.0,
+    "high_percentile": 95.0,
+    "training_records": 64,
+    "metrics": {
+      "dino_similarity": {
+        "low": 0.48374358336587614,
+        "high": 0.944711540900385,
+        "direction": "positive"
+      },
+      "silhouette_iou": {
+        "low": 0.2960112905391091,
+        "high": 0.9250495990823943,
+        "direction": "positive"
+      },
+      "contour_similarity": {
+        "low": 0.7497462310439106,
+        "high": 0.9832810103392684,
+        "direction": "positive"
+      },
+      "largest_component_area_ratio": {
+        "low": 0.9987405062814846,
+        "high": 1.0000000000000002,
+        "direction": "positive"
+      },
+      "debris_area_ratio": {
+        "low": 0.0,
+        "high": 0.0009005694052122183,
+        "direction": "negative"
+      },
+      "boundary_edge_length_ratio": {
+        "low": 0.07224977794087067,
+        "high": 0.22575417056252717,
+        "direction": "negative"
+      },
+      "non_manifold_edge_length_ratio": {
+        "low": 0.0,
+        "high": 0.0,
+        "direction": "negative"
+      }
+    }
+  },
+  "test_used_for_fitting": false
+}

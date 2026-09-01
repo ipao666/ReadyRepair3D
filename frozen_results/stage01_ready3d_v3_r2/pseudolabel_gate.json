@@ -1,0 +1,43 @@
+{
+  "schema_version": "r3dguard.ready3d-v3-pseudolabel-gate.v1",
+  "checks": {
+    "checkpoint_schema_valid": true,
+    "validation_only_model_selection": true,
+    "test_not_used_for_model_selection": true,
+    "test_not_used_for_threshold_selection": true,
+    "v3_test_mean_quality_above_random": true,
+    "validation_top1_above_random_chance": true,
+    "validation_quality_capture_positive": true
+  },
+  "allow_ready3d_v3_pseudo_labels": true,
+  "validation": {
+    "groups": 12,
+    "mean_selected_quality": 0.628900557756424,
+    "top1_accuracy": 0.3333333333333333,
+    "mean_regret": 0.09732740620772044,
+    "quality_capture": 0.8710284484549892
+  },
+  "test_ready_v3_top1": {
+    "groups": 12,
+    "mean_quality": 0.5353402373550297,
+    "qualified_rate": 0.0,
+    "technical_valid_rate": 1.0,
+    "top1_accuracy": 0.0,
+    "mean_regret": 0.11027295177035427,
+    "quality_capture": 0.8320184704661848,
+    "two_d_candidates_per_group": 4,
+    "three_d_calls_per_group": 1
+  },
+  "test_random_top1": {
+    "groups": 12,
+    "mean_quality": 0.45458374947864805,
+    "qualified_rate": 0.0,
+    "technical_valid_rate": 1.0,
+    "top1_accuracy": 0.08333333333333333,
+    "mean_regret": 0.19102943964673588,
+    "quality_capture": 0.6936470503319349,
+    "two_d_candidates_per_group": 4,
+    "three_d_calls_per_group": 1
+  },
+  "test_used_for_selection": false
+}

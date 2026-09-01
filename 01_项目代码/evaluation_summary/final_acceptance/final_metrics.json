@@ -1,0 +1,141 @@
+{
+    "evidence_scope":  "Independent32 Direct / Ready Top-2 / All plus Ready3D V2 and Repair3D reports",
+    "strategies":  {
+                       "direct":  {
+                                      "strategy":  "direct",
+                                      "groups":  32.0,
+                                      "technically_valid":  32.0,
+                                      "technical_valid_rate":  1.0,
+                                      "qualified":  7.0,
+                                      "qualified_rate":  0.21875,
+                                      "mean_quality_score_v2":  0.6570083867595932,
+                                      "median_quality_score_v2":  0.6597100461147434,
+                                      "quality_std":  0.1616482217255057,
+                                      "mean_3d_calls":  1.0,
+                                      "mean_gpu_generation_seconds":  115.03856250000001,
+                                      "gpu_seconds_per_qualified_glb":  525.8905714285714,
+                                      "gpu_cost_scope":  "hunyuan_shape_and_paint_inference_excluding_model_load_and_ready3d",
+                                      "mean_regret":  0.112458762094824,
+                                      "quality_capture":  0.8576339347449726
+                                  },
+                       "ready_top2":  {
+                                          "strategy":  "ready_top2",
+                                          "groups":  32.0,
+                                          "technically_valid":  32.0,
+                                          "technical_valid_rate":  1.0,
+                                          "qualified":  11.0,
+                                          "qualified_rate":  0.34375,
+                                          "mean_quality_score_v2":  0.7244901791968387,
+                                          "median_quality_score_v2":  0.7528382162152866,
+                                          "quality_std":  0.12724582688320712,
+                                          "mean_3d_calls":  2.0,
+                                          "mean_gpu_generation_seconds":  227.90368750000007,
+                                          "gpu_seconds_per_qualified_glb":  662.9925454545456,
+                                          "gpu_cost_scope":  "hunyuan_shape_and_paint_inference_excluding_model_load_and_ready3d",
+                                          "mean_regret":  0.04497696965757857,
+                                          "quality_capture":  0.9452532597774583
+                                      },
+                       "all":  {
+                                   "strategy":  "all",
+                                   "groups":  32,
+                                   "technically_valid":  32,
+                                   "technical_valid_rate":  1,
+                                   "qualified":  15,
+                                   "qualified_rate":  0.472,
+                                   "mean_quality_score_v2":  0.7495,
+                                   "median_quality_score_v2":  0.78766888831979576,
+                                   "quality_std":  0.11967451758127676,
+                                   "mean_3d_calls":  4,
+                                   "mean_gpu_generation_seconds":  457.2,
+                                   "gpu_seconds_per_qualified_glb":  975.36,
+                                   "gpu_cost_scope":  "hunyuan_shape_and_paint_inference_excluding_model_load_and_ready3d",
+                                   "mean_regret":  0,
+                                   "quality_capture":  1
+                               }
+                   },
+    "paired_differences":  {
+                               "ready_top2_minus_direct_mean_quality":  {
+                                                                            "estimate":  0.06748179243724543,
+                                                                            "ci95_low":  0.01372475614353798,
+                                                                            "ci95_high":  0.12335592742026606
+                                                                        }
+                           },
+    "bootstrap":  {
+                      "iterations":  10000,
+                      "seed":  20260721,
+                      "group_count":  32
+                  },
+    "selection_diagnostics":  {
+                                  "structural_pass_candidates":  127,
+                                  "all_structure_failed_groups":  0,
+                                  "selection_fallback_count":  0,
+                                  "direct_mean_regret":  0.112458762094824,
+                                  "direct_quality_capture":  0.8576339347449726,
+                                  "ready_top2_mean_regret":  0.04497696965757857,
+                                  "ready_top2_quality_capture":  0.9452532597774583
+                              },
+    "ready3d_v2":  {
+                       "sample_counts":  {
+                                             "train":  96,
+                                             "validation":  64,
+                                             "test":  24
+                                         },
+                       "group_counts":  {
+                                            "train":  24,
+                                            "validation":  16,
+                                            "test":  6
+                                        },
+                       "quality":  {
+                                       "validation":  {
+                                                          "mae":  0.11265398048050701,
+                                                          "rmse":  0.13472232279938579,
+                                                          "spearman":  0.2559981684981685
+                                                      },
+                                       "test":  {
+                                                    "mae":  0.1250341845370002,
+                                                    "rmse":  0.1643764924537367,
+                                                    "spearman":  -0.10956521739130433
+                                                }
+                                   },
+                       "ranking":  {
+                                       "groups":  6,
+                                       "top1_tie_aware":  0.3333333333333333,
+                                       "mean_regret":  0.09499364097913106,
+                                       "quality_capture":  0.8727691790419895,
+                                       "training_pairs":  288,
+                                       "training_positive_pairs":  144,
+                                       "training_negative_pairs":  144,
+                                       "weight_min":  0.25,
+                                       "weight_max":  4.0,
+                                       "weight_mean":  1.0239168657701057,
+                                       "random_baseline":  {
+                                                               "top1_tie_aware":  0.25,
+                                                               "mean_regret":  0.13187538584073386,
+                                                               "quality_capture":  0.8318396672769145
+                                                           },
+                                       "relative_to_random":  {
+                                                                  "top1_absolute_gain":  0.08333333333333331,
+                                                                  "regret_reduction":  0.0368817448616028,
+                                                                  "quality_capture_gain":  0.04092951176507498
+                                                              }
+                                   }
+                   },
+    "repair_safe":  {
+                        "report_count":  32,
+                        "accepted_count":  32,
+                        "accepted_rate":  1.0,
+                        "rollback_count":  0,
+                        "rollback_rate":  0.0,
+                        "passthrough_count":  30,
+                        "passthrough_rate":  0.9375,
+                        "modified_count":  2,
+                        "modified_rate":  0.0625,
+                        "modified_and_accepted_count":  2,
+                        "modified_and_accepted_rate":  0.0625,
+                        "no_harm_count":  32,
+                        "no_harm_rate":  1.0,
+                        "loadable_after_count":  32,
+                        "loadable_after_rate":  1.0,
+                        "mean_observed_gain":  0.0
+                    }
+}

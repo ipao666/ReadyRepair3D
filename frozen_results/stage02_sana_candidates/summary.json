@@ -1,0 +1,22 @@
+{
+  "schema_version": "r3dguard.stage02-summary.v1",
+  "status": "ready",
+  "candidates_expected": 960,
+  "candidates_success": 960,
+  "candidates_failed": 0,
+  "candidate_split_counts": {
+    "train": 720,
+    "validation": 120,
+    "dev_test": 120
+  },
+  "unique_seeds": 960,
+  "seed_coverage_rate": 1.0,
+  "image_resolutions": {
+    "1024x1024:RGB": 960
+  },
+  "adherence_rows": 960,
+  "adherence_scored": 959,
+  "adherence_missing": 1,
+  "adherence_coverage_rate": 0.9989583333333333,
+  "final_test_used": false
+}

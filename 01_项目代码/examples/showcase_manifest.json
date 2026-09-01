@@ -1,0 +1,39 @@
+{
+  "schema_version": "readyrepair3d.showcase.v1",
+  "notes": "Three real textured GLB outputs selected from the frozen project results. Preview images were rendered locally from the packaged GLBs; they are not AI-generated replacement images.",
+  "assets": [
+    {
+      "id": "teapot",
+      "name_zh": "蓝白陶瓷茶壶",
+      "backend": "Hunyuan3D-2.1",
+      "evidence_role": "final_acceptance",
+      "source_record": "evaluation/final_acceptance_20260722/pipeline/final.glb",
+      "glb": "examples/showcase/teapot/final.glb",
+      "preview": "examples/showcase/teapot/preview.png",
+      "glb_sha256": "b1acbf3adce355257e08effec9daf2e7022eab3c88f583d1ab697b5420c4d059",
+      "preview_sha256": "03d4628baac7c8ca2436d6f5b36a330a31e2a2c6ddc03d53968936efd133eaf1"
+    },
+    {
+      "id": "wooden_elephant",
+      "name_zh": "木雕大象",
+      "backend": "Hunyuan3D-2.1",
+      "evidence_role": "independent32_showcase",
+      "source_record": "ind32_024_c1_s2026072341",
+      "glb": "examples/showcase/wooden_elephant/final.glb",
+      "preview": "examples/showcase/wooden_elephant/preview.png",
+      "glb_sha256": "9c2bf05a9df723ee0a96041bd576f92a739793bd5e846506fbd5d4ae42b32c64",
+      "preview_sha256": "f8e77727a2d1be753549cf8bdd334aa5031e3e99eb9f1f9d91d4997f28af8a86"
+    },
+    {
+      "id": "excavator",
+      "name_zh": "玩具挖掘机",
+      "backend": "Hunyuan3D-2.1",
+      "evidence_role": "chinese_prompt_showcase",
+      "source_record": "zh_demo_003_c3_s2031136393",
+      "glb": "examples/showcase/excavator/final.glb",
+      "preview": "examples/showcase/excavator/preview.png",
+      "glb_sha256": "bb52d07a85785db54d2d1f887c0996801b2c17befec26dd00de0d0dceffbf6d9",
+      "preview_sha256": "5f6b5859a6170145561c31f080515e12bae69f3419154d6a4c9abff0919c95cb"
+    }
+  ]
+}

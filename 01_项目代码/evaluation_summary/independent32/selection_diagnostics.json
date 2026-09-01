@@ -1,0 +1,9 @@
+{
+    "structural_pass_candidates":  127,
+    "all_structure_failed_groups":  0,
+    "selection_fallback_count":  0,
+    "direct_mean_regret":  0.112458762094824,
+    "direct_quality_capture":  0.8576339347449726,
+    "ready_top2_mean_regret":  0.04497696965757857,
+    "ready_top2_quality_capture":  0.9452532597774583
+}

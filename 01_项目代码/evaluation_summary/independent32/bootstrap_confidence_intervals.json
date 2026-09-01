@@ -1,0 +1,48 @@
+{
+    "iterations":  10000,
+    "seed":  20260721,
+    "group_count":  32,
+    "strategies":  {
+                       "direct":  {
+                                      "mean_quality":  {
+                                                           "estimate":  0.6570083867595932,
+                                                           "ci95_low":  0.6007086934310477,
+                                                           "ci95_high":  0.7117483913172669
+                                                       },
+                                      "qualified_rate":  {
+                                                             "estimate":  0.21875,
+                                                             "ci95_low":  0.09375,
+                                                             "ci95_high":  0.375
+                                                         },
+                                      "mean_regret":  {
+                                                          "estimate":  0.112458762094824,
+                                                          "ci95_low":  0.06795168987802737,
+                                                          "ci95_high":  0.1644811756831674
+                                                      }
+                                  },
+                       "ready_top2":  {
+                                          "mean_quality":  {
+                                                               "estimate":  0.7244901791968386,
+                                                               "ci95_low":  0.6800959802712153,
+                                                               "ci95_high":  0.7669301015726415
+                                                           },
+                                          "qualified_rate":  {
+                                                                 "estimate":  0.34375,
+                                                                 "ci95_low":  0.1875,
+                                                                 "ci95_high":  0.5
+                                                             },
+                                          "mean_regret":  {
+                                                              "estimate":  0.04497696965757857,
+                                                              "ci95_low":  0.02065601519299492,
+                                                              "ci95_high":  0.0766420770194187
+                                                          }
+                                      }
+                   },
+    "paired_differences":  {
+                               "ready_top2_minus_direct_mean_quality":  {
+                                                                            "estimate":  0.06748179243724543,
+                                                                            "ci95_low":  0.01372475614353798,
+                                                                            "ci95_high":  0.12335592742026606
+                                                                        }
+                           }
+}

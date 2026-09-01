@@ -1,0 +1,9 @@
+{
+  "glb_total": 1803,
+  "excluded_training_or_fixture": 1383,
+  "loadable_nonexcluded": 409,
+  "textured_nonexcluded": 409,
+  "known_provenance_nonexcluded": 409,
+  "eligible_technical": 395,
+  "inventory_sha256": "97a3263183406173812ad94cea3af6f60d0d33e755b63bc5f3314a8b90da4248"
+}

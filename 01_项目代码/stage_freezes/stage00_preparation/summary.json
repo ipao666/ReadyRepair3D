@@ -1,0 +1,45 @@
+{
+  "schema_version": "r3dguard.stage-freeze.v1",
+  "stage": "stage00_preparation",
+  "status": "ready",
+  "frozen_at": "2026-08-31T00:00:00+08:00",
+  "source_bundle_commit": "556f756",
+  "prompt_catalog": {
+    "development_groups": 240,
+    "split_groups": {
+      "train": 180,
+      "validation": 30,
+      "dev_test": 30
+    },
+    "final_test_groups": 64,
+    "semantic_subjects": 304,
+    "categories": 19,
+    "test_used_for_model_selection": false
+  },
+  "training_contract": {
+    "base_model": "SANA1.5_1.6B_1024px_diffusers",
+    "rank": 16,
+    "alpha": 16,
+    "trainable_modules": ["to_q", "to_k", "to_v"],
+    "precision": "bf16",
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 0.00005,
+    "optimizer": "adamw_8bit",
+    "max_steps": 1500,
+    "warmup_steps": 100,
+    "checkpointing_steps": 250,
+    "seed": 20260828
+  },
+  "quality_weight_contract": {
+    "primary_3d_label": "hunyuan3d_quality",
+    "fallback_3d_label": "ready3d_quality",
+    "formula": "0.70 * quality_3d + 0.30 * prompt_adherence",
+    "missing_prompt_adherence": "quality_3d_only"
+  },
+  "verification": {
+    "non_integration_tests_passed": 253,
+    "non_integration_tests_deselected": 2,
+    "bitsandbytes_version": "0.50.2"
+  }
+}

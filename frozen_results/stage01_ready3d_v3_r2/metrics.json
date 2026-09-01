@@ -1,0 +1,423 @@
+{
+  "schema_version": "r3dguard.ready3d-v3-top1-metrics.v1",
+  "model_selection": {
+    "split": "validation",
+    "priority": [
+      "mean_regret_min",
+      "quality_capture_max",
+      "top1_accuracy_max"
+    ],
+    "test_used_for_selection": false
+  },
+  "selected": {
+    "name": "dino/hist_gradient_boosting+full",
+    "ranking_name": "dino/hist_gradient_boosting",
+    "ranking_feature_set": "dino",
+    "ranking_model_name": "hist_gradient_boosting",
+    "quality_feature_set": "full",
+    "weights": {
+      "pairwise": 0.8,
+      "utility": 0.19999999999999996
+    }
+  },
+  "validation": {
+    "groups": 12,
+    "mean_selected_quality": 0.628900557756424,
+    "top1_accuracy": 0.3333333333333333,
+    "mean_regret": 0.09732740620772044,
+    "quality_capture": 0.8710284484549892
+  },
+  "test": {
+    "groups": 12,
+    "mean_selected_quality": 0.5353402321537336,
+    "top1_accuracy": 0.0,
+    "mean_regret": 0.11027295142412186,
+    "quality_capture": 0.8320184690159328
+  },
+  "group_counts": {
+    "train": 56,
+    "validation": 12,
+    "test": 12
+  },
+  "resample_suggestion_threshold": 0.6486721712744069,
+  "selection_candidates": [
+    {
+      "name": "engineered/weighted_logistic+engineered",
+      "weights": {
+        "pairwise": 0.7000000000000001,
+        "utility": 0.29999999999999993
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5900132929285368,
+        "top1_accuracy": 0.25,
+        "mean_regret": 0.13621467103560767,
+        "quality_capture": 0.8154123378512833
+      }
+    },
+    {
+      "name": "engineered/weighted_logistic+dino",
+      "weights": {
+        "pairwise": 0.8,
+        "utility": 0.19999999999999996
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5877031832933426,
+        "top1_accuracy": 0.16666666666666666,
+        "mean_regret": 0.1385247806708018,
+        "quality_capture": 0.8122158413177624
+      }
+    },
+    {
+      "name": "engineered/weighted_logistic+full",
+      "weights": {
+        "pairwise": 0.1,
+        "utility": 0.9
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.562200332681338,
+        "top1_accuracy": 0.08333333333333333,
+        "mean_regret": 0.1640276312828064,
+        "quality_capture": 0.7787639235098052
+      }
+    },
+    {
+      "name": "engineered/extra_trees+engineered",
+      "weights": {
+        "pairwise": 0.30000000000000004,
+        "utility": 0.7
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5786015465855598,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.14762641737858453,
+        "quality_capture": 0.8018726500105114
+      }
+    },
+    {
+      "name": "engineered/extra_trees+dino",
+      "weights": {
+        "pairwise": 0.2,
+        "utility": 0.8
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5631470655401548,
+        "top1_accuracy": 0.16666666666666666,
+        "mean_regret": 0.16308089842398962,
+        "quality_capture": 0.7790345574034411
+      }
+    },
+    {
+      "name": "engineered/extra_trees+full",
+      "weights": {
+        "pairwise": 0.1,
+        "utility": 0.9
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5619661832849184,
+        "top1_accuracy": 0.08333333333333333,
+        "mean_regret": 0.16426178067922592,
+        "quality_capture": 0.7784902503028014
+      }
+    },
+    {
+      "name": "engineered/hist_gradient_boosting+engineered",
+      "weights": {
+        "pairwise": 0.2,
+        "utility": 0.8
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6007736598451933,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.12545430411895117,
+        "quality_capture": 0.8238776743252099
+      }
+    },
+    {
+      "name": "engineered/hist_gradient_boosting+dino",
+      "weights": {
+        "pairwise": 0.30000000000000004,
+        "utility": 0.7
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5691934352119764,
+        "top1_accuracy": 0.16666666666666666,
+        "mean_regret": 0.15703452875216803,
+        "quality_capture": 0.7895635070913753
+      }
+    },
+    {
+      "name": "engineered/hist_gradient_boosting+full",
+      "weights": {
+        "pairwise": 0.1,
+        "utility": 0.9
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.562200332681338,
+        "top1_accuracy": 0.08333333333333333,
+        "mean_regret": 0.1640276312828064,
+        "quality_capture": 0.7787639235098052
+      }
+    },
+    {
+      "name": "dino/weighted_logistic+engineered",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6222040131688118,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.1040239507953326,
+        "quality_capture": 0.8460757450505946
+      }
+    },
+    {
+      "name": "dino/weighted_logistic+dino",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6222040131688118,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.1040239507953326,
+        "quality_capture": 0.8460757450505946
+      }
+    },
+    {
+      "name": "dino/weighted_logistic+full",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6222040131688118,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.1040239507953326,
+        "quality_capture": 0.8460757450505946
+      }
+    },
+    {
+      "name": "dino/extra_trees+engineered",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5773897220691045,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.14883824189503989,
+        "quality_capture": 0.8000667912720524
+      }
+    },
+    {
+      "name": "dino/extra_trees+dino",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5773897220691045,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.14883824189503989,
+        "quality_capture": 0.8000667912720524
+      }
+    },
+    {
+      "name": "dino/extra_trees+full",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5773897220691045,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.14883824189503989,
+        "quality_capture": 0.8000667912720524
+      }
+    },
+    {
+      "name": "dino/hist_gradient_boosting+engineered",
+      "weights": {
+        "pairwise": 0.8,
+        "utility": 0.19999999999999996
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6279468784729639,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.09828108549118042,
+        "quality_capture": 0.8698220809219043
+      }
+    },
+    {
+      "name": "dino/hist_gradient_boosting+dino",
+      "weights": {
+        "pairwise": 0.9,
+        "utility": 0.09999999999999998
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6204129407803217,
+        "top1_accuracy": 0.25,
+        "mean_regret": 0.10581502318382263,
+        "quality_capture": 0.8595240831485468
+      }
+    },
+    {
+      "name": "dino/hist_gradient_boosting+full",
+      "weights": {
+        "pairwise": 0.8,
+        "utility": 0.19999999999999996
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.628900557756424,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.09732740620772044,
+        "quality_capture": 0.8710284484549892
+      }
+    },
+    {
+      "name": "full/weighted_logistic+engineered",
+      "weights": {
+        "pairwise": 0.2,
+        "utility": 0.8
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.6047538245717684,
+        "top1_accuracy": 0.4166666666666667,
+        "mean_regret": 0.12147413939237595,
+        "quality_capture": 0.8308086025400532
+      }
+    },
+    {
+      "name": "full/weighted_logistic+dino",
+      "weights": {
+        "pairwise": 0.6000000000000001,
+        "utility": 0.3999999999999999
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5930261587103208,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.1332018052538236,
+        "quality_capture": 0.8202937335001236
+      }
+    },
+    {
+      "name": "full/weighted_logistic+full",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.587179700533549,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.1390482634305954,
+        "quality_capture": 0.805139419317679
+      }
+    },
+    {
+      "name": "full/extra_trees+engineered",
+      "weights": {
+        "pairwise": 0.9,
+        "utility": 0.09999999999999998
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5770760029554367,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.14915196100870767,
+        "quality_capture": 0.7995204911046402
+      }
+    },
+    {
+      "name": "full/extra_trees+dino",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5729041794935862,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.15332378447055817,
+        "quality_capture": 0.7939416337342043
+      }
+    },
+    {
+      "name": "full/extra_trees+full",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5729041794935862,
+        "top1_accuracy": 0.3333333333333333,
+        "mean_regret": 0.15332378447055817,
+        "quality_capture": 0.7939416337342043
+      }
+    },
+    {
+      "name": "full/hist_gradient_boosting+engineered",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5833527694145838,
+        "top1_accuracy": 0.25,
+        "mean_regret": 0.14287519454956055,
+        "quality_capture": 0.8076542200798341
+      }
+    },
+    {
+      "name": "full/hist_gradient_boosting+dino",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5833527694145838,
+        "top1_accuracy": 0.25,
+        "mean_regret": 0.14287519454956055,
+        "quality_capture": 0.8076542200798341
+      }
+    },
+    {
+      "name": "full/hist_gradient_boosting+full",
+      "weights": {
+        "pairwise": 1.0,
+        "utility": 0.0
+      },
+      "validation": {
+        "groups": 12,
+        "mean_selected_quality": 0.5833527694145838,
+        "top1_accuracy": 0.25,
+        "mean_regret": 0.14287519454956055,
+        "quality_capture": 0.8076542200798341
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# 上交包清理变更记录
+
+- strategy_group_results.jsonl: 保留 Direct / Ready Top-2 共64行；All只保留PPT冻结汇总。
+- strategy_summary.csv: 仅保留 direct / ready_top2 / all；All=0.7495 / 47.2%。
+- bootstrap_confidence_intervals.json: 仅保留三策略及 Ready Top-2 相对 Direct 的配对差异。
+- selection_diagnostics.json: 保留Direct与Ready Top-2诊断字段。
+- main_experiment_report.md: 改为 Direct / Ready Top-2 / All 三行表。
+- final_metrics.json: 策略改为三列；All=0.7495/47.2%；Repair字段保持原冻结状态。
+- presentation_metrics_summary.md: 对齐 PPT 的三策略与 All 指标。
+- README.md: 主结果与诚实边界改为 PPT 口径
+- FROZEN_RELEASE.json: 冻结三策略清单与 All 指标。
+- RELEASE_MANIFEST.md: 同步清单口径
+- ops/aggregate_final_results.py: build_markdown 改为 PPT 三策略口径
+- scripts/aggregate_final_results.py: build_markdown 改为 PPT 三策略口径
+- 删除目录: legacy
+- 删除目录: ready3d_labels
+- 删除目录: checkpoints\repair3d
+- 删除目录: checkpoints\repair3d_v2
+- 删除目录: checkpoints\repair3d_v3
+- 删除目录: evaluation_summary\repair3d_v2
+- 删除目录: evaluation_summary\repair3d_v3
+- 删除文件: config\pipeline.local.reference.json
+- 删除文件: ops\run_quality_pipeline.sh
+- 删除文件: ops\pipeline.local.json
+- 删除文件: ops\run_trellis_16.py
+- 删除文件: ops\verify_trellis_16.py
+- 删除文件: ops\trellis_batch_common.py
+- 删除文件: ops\smoke_trellis.py
+- 删除文件: ops\smoke_trellis_1024.py
+- 删除文件: ops\diagnose_trellis_envmap.py
+- 删除文件: ops\Hunyuan3D-2.1-gradio_app.snapshot.py
+- 删除文件: ops\Hunyuan3D-2.1-README.snapshot.md
+- 删除文件: ops\bpy-4.0.0-WHEEL
+- 删除文件: ops\download_gso_subset.py
+- 删除文件: ops\test_download_gso_subset.py
+- 删除文件: ops\generate_repair3d_defects.py
+- 删除文件: ops\run_repair3d_decimate_trials.py
+- 删除文件: ops\run_repair3d_defect_trials.py
+- 删除文件: ops\run_repair3d_diagnostics.py
+- 删除文件: ops\run_repair3d_trials.py
+- 删除文件: ops\train_repair3d_action_model.py
+- 删除文件: ops\predict_repair3d_action.py
+- 删除文件: ops\summarize_repair3d_evaluation.py
+- 删除文件: ops\repair3d_defects.py
+- 删除文件: tests\test_repair3d_action_model.py
+- 删除文件: tests\test_repair3d_decimate.py
+- 删除文件: tests\test_trellis_batch_common.py
+- showcase_report.md: 展示素材不属于本轮实验口径修改范围。

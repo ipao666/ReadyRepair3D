@@ -10,5 +10,9 @@ runs/
 outputs/
 checkpoints/
 data/
+.matpilot/
+02_Git历史/
+远程环境验收/
+*.command
 !.matpilot/
 !.matpilot/**

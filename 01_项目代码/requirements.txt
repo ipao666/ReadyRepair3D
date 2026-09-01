@@ -1,0 +1,15 @@
+# CPU-side inspection, scoring, packaging, and unit-test imports.
+# GPU inference uses environment/trellis2.pip-freeze.txt and
+# environment/hunyuan21.pip-freeze.txt as the frozen reference.
+joblib==1.5.3
+matplotlib==3.10.9
+numpy==2.2.6
+pillow==12.3.0
+scikit-learn==1.7.2
+scipy==1.15.3
+trimesh==4.12.2
+pygltflib==1.16.5
+opencv-python-headless==5.0.0.93
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.57.3

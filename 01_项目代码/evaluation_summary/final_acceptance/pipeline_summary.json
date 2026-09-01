@@ -1,0 +1,28 @@
+{
+  "schema_version": "r3dguard.full-quality-pipeline.v1",
+  "prompt": "a blue and white ceramic teapot with a round body, a single curved handle, and a short spout, strictly preserve the described subject, count, colors, materials, and structure; a single isolated object, the full object entirely visible within the frame, centered, three-quarter product view, plain light gray seamless studio background, soft diffuse lighting, clean silhouette, high geometric clarity, no occlusion, no people, no hands, no text, no logo, no watermark, no extra objects, no cropped parts",
+  "base_seed": 2026072201,
+  "quality_threshold": 0.806912747446761,
+  "round_count": 1,
+  "second_round_executed": false,
+  "second_round_trigger_reason": null,
+  "rounds": [
+    {
+      "round_index": 1,
+      "seed": 2026072201,
+      "quality_score_v2": 0.822184917094585,
+      "technically_valid": true,
+      "meets_quality_threshold": true,
+      "repair3d_action": "accept",
+      "repair3d_accepted": true,
+      "v2_repair_accepted": false
+    }
+  ],
+  "selected_round": 1,
+  "final_quality_score_v2": 0.822184917094585,
+  "final_technically_valid": true,
+  "meets_quality_threshold": true,
+  "low_confidence": false,
+  "final_glb": "/root/r3dguard/evaluation/final_acceptance_20260722/pipeline/final.glb",
+  "elapsed_seconds": 470.11814641952515
+}

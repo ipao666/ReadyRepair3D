@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "01_blue_white_teapot",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 24014
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "03_wooden_elephant",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 25079
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "04_toy_excavator",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 28369
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "02_retro_alarm_clock",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 24565
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "05_blue_armchair",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 23222
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "06_yellow_biplane",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 25768
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "07_bronze_handbell",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 24346
+    },
+    "blender_loaded_and_rendered": true
+  },
+  {
+    "case_id": "08_purple_octopus",
+    "trimesh": {
+      "loadable": true,
+      "has_texture": true,
+      "faces": 40000,
+      "vertices": 30110
+    },
+    "blender_loaded_and_rendered": true
+  }
+]

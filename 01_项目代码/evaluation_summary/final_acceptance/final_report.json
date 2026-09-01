@@ -1,0 +1,24 @@
+{
+  "schema_version": "r3dguard.best-round.v1",
+  "round_count": 1,
+  "second_round_executed": false,
+  "selected_round": 1,
+  "selected_glb_source": "/root/r3dguard/evaluation/final_acceptance_20260722/pipeline/round_1/round_final/final.glb",
+  "final_quality_score_v2": 0.822184917094585,
+  "final_technically_valid": true,
+  "quality_threshold": 0.806912747446761,
+  "meets_quality_threshold": true,
+  "low_confidence": false,
+  "rounds": [
+    {
+      "round_index": 1,
+      "quality_score_v2": 0.822184917094585,
+      "technically_valid": true,
+      "meets_quality_threshold": true,
+      "repair3d_accepted": true,
+      "v2_repair_accepted": false,
+      "final_glb": "/root/r3dguard/evaluation/final_acceptance_20260722/pipeline/round_1/round_final/final.glb"
+    }
+  ],
+  "final_glb": "/root/r3dguard/evaluation/final_acceptance_20260722/pipeline/final.glb"
+}

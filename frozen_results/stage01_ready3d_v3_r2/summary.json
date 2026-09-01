@@ -1,0 +1,78 @@
+{
+  "schema_version": "r3dguard.stage-freeze.v1",
+  "stage": "stage01_ready3d_v3_r2",
+  "status": "ready",
+  "source_bundle_commit": "556f756",
+  "counts": {
+    "prompt_groups": 80,
+    "candidates": 320,
+    "images": 320,
+    "glb": 320,
+    "render_views": 2560,
+    "quality_labels": 320
+  },
+  "model_selection": {
+    "split": "validation",
+    "priority": [
+      "mean_regret_min",
+      "quality_capture_max",
+      "top1_accuracy_max"
+    ],
+    "test_used_for_selection": false
+  },
+  "validation": {
+    "groups": 12,
+    "mean_selected_quality": 0.628900557756424,
+    "top1_accuracy": 0.3333333333333333,
+    "mean_regret": 0.09732740620772044,
+    "quality_capture": 0.8710284484549892
+  },
+  "test_ready_v3_top1": {
+    "groups": 12,
+    "mean_quality": 0.5353402373550297,
+    "qualified_rate": 0.0,
+    "technical_valid_rate": 1.0,
+    "top1_accuracy": 0.0,
+    "mean_regret": 0.11027295177035427,
+    "quality_capture": 0.8320184704661848,
+    "two_d_candidates_per_group": 4,
+    "three_d_calls_per_group": 1
+  },
+  "test_random_top1": {
+    "groups": 12,
+    "mean_quality": 0.45458374947864805,
+    "qualified_rate": 0.0,
+    "technical_valid_rate": 1.0,
+    "top1_accuracy": 0.08333333333333333,
+    "mean_regret": 0.19102943964673588,
+    "quality_capture": 0.6936470503319349,
+    "two_d_candidates_per_group": 4,
+    "three_d_calls_per_group": 1
+  },
+  "test_ready_v2_top1": {
+    "groups": 12,
+    "mean_quality": 0.5102867612455316,
+    "qualified_rate": 0.0,
+    "technical_valid_rate": 1.0,
+    "top1_accuracy": 0.25,
+    "mean_regret": 0.1353264278798524,
+    "quality_capture": 0.8032629090851291,
+    "two_d_candidates_per_group": 4,
+    "three_d_calls_per_group": 1
+  },
+  "test_structure_top1": {
+    "groups": 12,
+    "mean_quality": 0.5937554796636081,
+    "qualified_rate": 0.0,
+    "technical_valid_rate": 1.0,
+    "top1_accuracy": 0.4166666666666667,
+    "mean_regret": 0.05185770946177595,
+    "quality_capture": 0.9275354177459039,
+    "two_d_candidates_per_group": 4,
+    "three_d_calls_per_group": 1
+  },
+  "allow_ready3d_v3_pseudo_labels": true,
+  "test_used_for_selection": false,
+  "supersedes": "stage01_ready3d_v3",
+  "correction_reason": "Separate frozen 3D scoring calibration from Ready3D training calibration."
+}

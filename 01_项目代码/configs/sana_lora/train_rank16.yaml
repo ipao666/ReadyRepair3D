@@ -1,0 +1,19 @@
+base_model: SANA1.5_1.6B_1024px_diffusers
+trainable_modules: [to_q, to_k, to_v]
+rank: 16
+alpha: 16
+precision: bf16
+batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-5
+optimizer: adamw_8bit
+max_steps: 1500
+warmup_steps: 100
+checkpointing_steps: 250
+gradient_clip: 1.0
+random_crop: false
+random_flip: false
+gradient_checkpointing: true
+freeze_text_encoder: true
+freeze_dc_ae: true
+seed: 20260828
