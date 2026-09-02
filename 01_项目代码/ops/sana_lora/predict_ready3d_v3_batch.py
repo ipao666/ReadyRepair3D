@@ -101,7 +101,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     splits = {value.strip() for value in args.splits.split(",") if value.strip()}
-    if not splits or not splits <= {"train", "validation", "dev_test"}:
+    if not splits or not splits <= {"train", "validation", "dev_test", "final_test"}:
         raise ValueError(f"invalid requested splits: {sorted(splits)}")
     predictions, selections = predict_candidates(
         read_jsonl(args.candidates),
@@ -118,7 +118,7 @@ def main() -> None:
                 "candidates": len(predictions),
                 "groups": len(selections),
                 "splits": sorted(splits),
-                "final_test_used": False,
+                "final_test_used": "final_test" in splits,
             }
         )
     )

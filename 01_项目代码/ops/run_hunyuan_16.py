@@ -62,7 +62,10 @@ CONTROL_PATH = OUTPUT_ROOT / "gpu_control.json"
 
 
 def sample_id_from_row(row: dict) -> str:
-    return Path(row["filename"]).stem
+    # Manifests assembled from several generators may reuse the original
+    # filename.  Prefer their explicit globally unique ID so artifacts and
+    # resumable status rows cannot overwrite one another.
+    return str(row.get("sample_id") or Path(row["filename"]).stem)
 
 
 def needs_stage(

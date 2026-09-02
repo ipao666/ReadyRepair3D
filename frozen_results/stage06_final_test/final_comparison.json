@@ -1,0 +1,28 @@
+{
+  "schema_version": "readyrepair3d.stage06.v1",
+  "base_summary": {
+    "groups": 64,
+    "mean_q": 0.4792467397340116,
+    "pass_rate": 0.015625,
+    "adherence_rate": 0.8333333333333334,
+    "technical_valid_rate": 1.0,
+    "gpu_seconds_per_group": null
+  },
+  "lora_summary": {
+    "groups": 64,
+    "mean_q": 0.5087640582937601,
+    "pass_rate": 0.046875,
+    "adherence_rate": 0.7916666666666666,
+    "technical_valid_rate": 0.953125,
+    "gpu_seconds_per_group": null
+  },
+  "paired_bootstrap": {
+    "iterations": 10000,
+    "seed": 20260902,
+    "mean_q_difference_lora_minus_base": 0.02951731855974859,
+    "ci95_low": -0.019777038604829062,
+    "ci95_high": 0.07739804762085488
+  },
+  "pass_rate_relative_uplift": 2.0,
+  "decision": "keep_base_sana"
+}
