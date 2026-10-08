@@ -1,10 +1,16 @@
 # Frozen experiment records
 
-These files are a compact, integrity-verifiable export of completed remote stages. They are not model artifacts or training data.
+Compact exports of historical author experiments. These files are evidence, not a self-contained model release. Current interpretation and limitations: [中文 evidence guide](../docs/EVIDENCE.md).
 
-| Directory | Contents |
-| --- | --- |
-| `stage01_ready3d_v3_r2/` | Frozen Ready3D V3 Top-1 summary, aggregate and strategy metrics, calibration metadata, pseudo-label gate, and SHA-256 records |
-| `stage02_sana_candidates/` | Frozen SANA candidate summary and the SHA-256 list for the complete generated candidate set |
+| Directory | Included evidence |
+|---|---|
+| `stage01_ready3d_v3_r2/` | Six-strategy group records, aggregates, calibration metadata and historical gate |
+| `stage02_sana_candidates/` | Generation summary and hash list; candidate images are not included |
+| `stage05_lora_selection/` | Selected-checkpoint validation summary |
+| `stage06_final_test/` | Final 64-group comparison summary and decision: `keep_base_sana` |
 
-`stage01_ready3d_v3_r2` supersedes the earlier Stage 1 freeze by separating the 3D scoring calibration from the Ready3D training calibration. All source assets remain on the secured remote environment and are intentionally excluded from Git.
+Stage 3/4 completion is described in the final report; full checkpoints and remote per-sample artifacts are not exported here. Stage 5/6 remote READY/hash artifacts are not all present in this repository. Hash lists may refer to remote files intentionally omitted from Git.
+
+Stage 1 V3 did not beat the structural rule baseline. The final LoRA confidence interval crosses zero and adherence/technical validity declined. Do not turn these records into a claim of significant or universal improvement.
+
+From the repository root, run `python tools/verify_portfolio.py` to recompute Stage 1 aggregates and validate the shipped showcase. Final Bootstrap cannot be independently recomputed without the missing group-level records.

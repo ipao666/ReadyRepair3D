@@ -28,10 +28,10 @@ LoRA 相对 Base 的平均 Q 差为 +0.02952，但 95% 配对 Bootstrap CI 为
 
 ## 可复现性与交付
 
-- 阶段 5、阶段 6 输出均含 SHA256 与 `READY` 冻结标记；
+- 远程阶段 5、阶段 6 输出记录了 SHA256 与 `READY` 冻结标记；本仓库保留摘要，未导出全部远程产物；
 - 最终决策及机器可读指标见 `frozen_results/stage06_final_test/final_comparison.json`；
 - 阶段 6 的中英文说明见 `frozen_results/stage06_final_test/README.md`；
-- 不公开模型权重、候选图片、GLB 和远程运行数据。
+- 不公开模型权重、批量候选图片、批量 GLB 和完整远程运行数据；三份精选展示 GLB 与预览见 `01_项目代码/examples/showcase/`。
 
 ## 后续方向
 

@@ -1,0 +1,5 @@
+# Small, explicit test profile: no model weights, torch, Blender or GPU runtime.
+numpy==2.2.6
+pillow==12.3.0
+pytest==9.1.1
+PyYAML==6.0.3

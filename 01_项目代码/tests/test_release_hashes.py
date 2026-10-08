@@ -31,3 +31,12 @@ def test_verify_manifest_reports_no_changes_for_matching_files(tmp_path: Path) -
     result = verify_manifest(tmp_path, manifest)
 
     assert result == {"missing": [], "mismatched": [], "unexpected": []}
+
+
+def test_local_install_and_environment_do_not_change_release_manifest(tmp_path: Path) -> None:
+    (tmp_path / "main.py").write_text("pass\n", encoding="utf-8")
+    for relative in ("src/project.egg-info/PKG-INFO", ".venv/pyvenv.cfg", ".ruff_cache/state"):
+        artifact = tmp_path / relative
+        artifact.parent.mkdir(parents=True, exist_ok=True)
+        artifact.write_text("local artifact", encoding="utf-8")
+    assert [path.name for path in collect_release_files(tmp_path)] == ["main.py"]

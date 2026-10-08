@@ -2,3 +2,7 @@
 .matpilot/** export-ignore
 .matpilot-worktrees export-ignore
 .matpilot-worktrees/** export-ignore
+
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf

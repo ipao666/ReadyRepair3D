@@ -10,6 +10,8 @@ from pathlib import Path
 EXCLUDED_DIRECTORIES = {
     ".git",
     ".pytest_cache",
+    ".venv",
+    ".ruff_cache",
     "__pycache__",
     "data",
     "logs",
@@ -28,6 +30,8 @@ def collect_release_files(root: Path) -> list[Path]:
             continue
         relative = path.relative_to(root)
         if any(part in EXCLUDED_DIRECTORIES for part in relative.parts):
+            continue
+        if any(part.endswith(".egg-info") for part in relative.parts):
             continue
         if relative.name in EXCLUDED_FILES or relative.suffix in {".pyc", ".pyo"}:
             continue

@@ -85,3 +85,15 @@ def test_submission_contains_viewable_example_assets() -> None:
     for asset in manifest["assets"]:
         assert (ROOT / asset["glb"]).is_file()
         assert (ROOT / asset["preview"]).is_file()
+
+
+def test_active_shell_entrypoints_use_unix_line_endings() -> None:
+    for path in ACTIVE_SHELL_ENTRYPOINTS:
+        assert b"\r\n" not in path.read_bytes(), path
+
+
+def test_active_shell_entrypoints_are_executable_on_posix() -> None:
+    import os
+    if os.name != "nt":
+        for path in ACTIVE_SHELL_ENTRYPOINTS:
+            assert os.access(path, os.X_OK), path
